@@ -1,0 +1,45 @@
+POST http://localhost/ecommerce-rest/wp-json/jwt-auth/v1/token
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin"
+}
+
+###
+
+GET http://localhost/ecommerce-rest/wp-json/api/v1/products
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Vjb21tZXJjZS1yZXN0IiwiaWF0IjoxNjg1NjkwNzI4LCJuYmYiOjE2ODU2OTA3MjgsImV4cCI6MTY4NjI5NTUyOCwiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.4Hs5I-bwVYpD5uto2SIuSXEDGyjWKvVLowm_x8h9knQ
+
+###
+
+POST http://localhost/ecommerce-rest/wp-json/api/v1/products
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Vjb21tZXJjZS1yZXN0IiwiaWF0IjoxNjg1NjkwNzI4LCJuYmYiOjE2ODU2OTA3MjgsImV4cCI6MTY4NjI5NTUyOCwiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.4Hs5I-bwVYpD5uto2SIuSXEDGyjWKvVLowm_x8h9knQ
+
+{
+    "p_name" : "Oraimo Earphones",
+    "p_category" : "Phone Accessories",
+    "p_description" : "These are good earphones",
+    "p_price" : 1000
+}
+
+###
+
+PUT http://localhost/ecommerce-rest/wp-json/api/v1/products/2
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Vjb21tZXJjZS1yZXN0IiwiaWF0IjoxNjg1NjkwNzI4LCJuYmYiOjE2ODU2OTA3MjgsImV4cCI6MTY4NjI5NTUyOCwiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.4Hs5I-bwVYpD5uto2SIuSXEDGyjWKvVLowm_x8h9knQ
+
+{
+    "p_name" : "Oraimo Earphones (updated 2023)",
+    "p_category" : "Phone Accessories",
+    "p_description" : "These are good earphones",
+    "p_price" : 1000
+}
+
+###
+
+
+DELETE http://localhost/ecommerce-rest/wp-json/api/v1/products/2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Vjb21tZXJjZS1yZXN0IiwiaWF0IjoxNjg1NjkwNzI4LCJuYmYiOjE2ODU2OTA3MjgsImV4cCI6MTY4NjI5NTUyOCwiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.4Hs5I-bwVYpD5uto2SIuSXEDGyjWKvVLowm_x8h9knQ
