@@ -41,5 +41,5 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vb
 ###
 
 
-DELETE http://localhost/ecommerce-rest/wp-json/api/v1/products/2
+DELETE http://localhost/ecommerce-rest/wp-json/api/v1/products/3
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Vjb21tZXJjZS1yZXN0IiwiaWF0IjoxNjg1NjkwNzI4LCJuYmYiOjE2ODU2OTA3MjgsImV4cCI6MTY4NjI5NTUyOCwiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.4Hs5I-bwVYpD5uto2SIuSXEDGyjWKvVLowm_x8h9knQ
